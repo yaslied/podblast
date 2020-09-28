@@ -1,0 +1,79 @@
+// MAIN FILE SCSS
+
+@import './__mixins.scss';
+@import './__fonts.scss';
+@import './__colors.scss';
+@import './__typography.scss';
+@import './__globals.scss';
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css");
+
+// nav component
+.nav {
+    max-height: $nav_height;
+    width: 100%;
+    padding: 4px 16px;
+    background-color: $dark_bg;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: 'Roboto-regular';
+
+    svg, img {
+      max-width: $nav_logo_height;
+      max-height: $nav_height;
+      border: 1px solid white;
+    }
+
+    ul {
+      justify-self: right !important;
+      display: inline-flex;
+      margin-left: auto;
+
+      li {
+        font-size: 16px;
+        margin: 0 16px;
+      }
+    }
+
+    i {
+      height: $icon_size2;
+      margin: 0 8px;
+      // align-self: center;
+    }
+
+    button {
+        // justify-self: flex-end;
+        margin: 0 0 0 32px;
+        background: transparent;
+        border: 2px solid white;
+        border-radius: 5px;
+        max-height: $btn_height;
+        padding: 8px 16px;
+        text-align: center;
+        color: white;
+        line-height: 24px;
+        align-self: center;
+        transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+        i {
+          color: white;
+          font-size: 16px;
+        }
+
+        span {
+          color: white;
+          margin: 0 8px;
+          font-size: 16px;
+          font-weight: 600;
+          letter-spacing: 1px;
+        }
+
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.01);
+        }
+    }
+}
