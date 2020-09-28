@@ -5,13 +5,24 @@
   src: url("./fonts/Roboto.ttf") format("truetype");
 }
 
-.roboto_regular_base, .title, .body, .caption, .overline {
-  font-family: 'roboto_regular';
+.roboto_regular_base, .big-title, .title, .subtitle, .body, .caption, .overline {
+  font-family: 'Roboto';
   color: #000;
+}
+
+.big-title {
+  font-size: 84px;
+  font-weight: 500;
+  letter-spacing: -1,5px;
 }
 
 .title {
   font-size: 48px;
+}
+
+.subtitle {
+  font-size: 32px;
+  font-weight: 800;
 }
 
 .body {
@@ -46,7 +57,11 @@ body {
   color: #fff;
 }
 
-.nav {
+.d-none {
+  display: none;
+}
+
+.nav-landing {
   max-height: 60px;
   width: 100%;
   padding: 4px 16px;
@@ -67,13 +82,18 @@ body {
   font-family: 'Roboto-regular';
 }
 
-.nav svg, .nav img {
+.nav-landing .identity .logo {
   max-width: 120px;
   max-height: 60px;
-  border: 1px solid white;
 }
 
-.nav ul {
+.nav-landing .identity span {
+  font-size: 20px !important;
+  font-weight: 600;
+}
+
+.nav-landing .nav-list {
+  list-style: none;
   justify-self: right !important;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -81,17 +101,18 @@ body {
   margin-left: auto;
 }
 
-.nav ul li {
+.nav-landing .nav-list .nav-list-item {
+  text-transform: none;
   font-size: 16px;
   margin: 0 16px;
 }
 
-.nav i {
+.nav-landing .user-icon {
   height: 24px;
   margin: 0 8px;
 }
 
-.nav button {
+.nav-landing button {
   margin: 0 0 0 32px;
   background: transparent;
   border: 2px solid white;
@@ -108,12 +129,12 @@ body {
   transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.nav button i {
+.nav-landing button i {
   color: white;
   font-size: 16px;
 }
 
-.nav button span {
+.nav-landing button span {
   color: white;
   margin: 0 8px;
   font-size: 16px;
@@ -121,9 +142,163 @@ body {
   letter-spacing: 1px;
 }
 
-.nav button:hover {
+.nav-landing button:hover {
   cursor: pointer;
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
+}
+
+.nav-withList {
+  max-height: 60px;
+  width: 100%;
+  padding: 4px 16px;
+  background-color: #040505;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Roboto-regular';
+}
+
+.nav-withList .identity .logo {
+  max-width: 120px;
+  max-height: 60px;
+  border: 1px solid white;
+}
+
+.nav-withList .nav-list {
+  list-style: none;
+  justify-self: right !important;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: auto;
+}
+
+.nav-withList .nav-list .nav-list-item {
+  text-transform: none;
+  font-size: 16px;
+  margin: 0 16px;
+}
+
+.nav-withList .user-icon {
+  height: 24px;
+  margin: 0 8px;
+}
+
+.nav-withList button {
+  margin: 0 0 0 32px;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  max-height: 45px;
+  padding: 8px 16px;
+  text-align: center;
+  color: white;
+  line-height: 24px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav-withList button i {
+  color: white;
+  font-size: 16px;
+}
+
+.nav-withList button span {
+  color: white;
+  margin: 0 8px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.nav-withList button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.section {
+  height: 100vh;
+  background-color: #9B00FF;
+  padding: 32px;
+  position: relative;
+}
+
+.section .container {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.section .container .content {
+  margin: 0 0 32px 0;
+  padding: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.section .container .content .big-title {
+  font-weight: lighter;
+}
+
+.section .container .content span, .section .container .content p {
+  color: white;
+  text-align: left;
+}
+
+.section .container .media-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+}
+
+.section .container .media-row .media-row-item {
+  min-width: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 32px;
+}
+
+.section .container .media-row .media-row-item .row-item-icon {
+  height: 32px;
+  font-size: 32px;
+}
+
+.section .container .media-row .media-row-item .row-item-text {
+  text-align: center;
+  margin: 16px 0 0 0;
 }
 /*# sourceMappingURL=main.css.map */
