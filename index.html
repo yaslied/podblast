@@ -1,72 +1,142 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="./assets/scss/main.css"/>
+  <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="./assets/scss/main.css"/>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-2x.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-1.png" />
-    
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <script src="jquery-3.5.1.min.js"></script>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
-</head>
-<body>
-    <nav class="nav-landing">
-     <div class="identity">
-        <svg class="logo" src="../../img/logo.svg" alt="logo">
-        <span>Pob<strong>blast</strong></span>
-      </div>
+        <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-2x.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon-1.png" />
+        <link rel="background" href="./assets/img/background.png"/>
+        <link rel="podcast" href="./assets/img/Nerdcast_-_2006 1.png">
+        
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <script src="jquery-3.5.1.min.js"></script>
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+    </head>
 
-      <i class="user-icon fas fa-user-alt"></i>
-
-      <button class="login-btn">
-        <span class="body">login</span>
-      </button>
-    </nav>
-
-    <section class="section">
-
-      <div class="container">
-
-        <div class="content">
-          <span class="big-title">Pod<strong>blast</strong></span>
-          <span class="subtible">um lugar especial para seus podcasts</span>
-          <p class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias suscipit officiis
-            amet vitae a quod, dicta debitis, reprehenderit assumenda sapiente incidunt illum placeat ducimus dolores,
-            dignissimos quisquam excepturi hic voluptatibus.</p>
+    <body>
+      <nav class="nav-landing">
+        <div class="identity">
+            <svg class="logo" src="../../assets/img/logo.svg" alt="logo">
+            <span>Pod<strong>blast</strong></span>
         </div>
-  
+
+        <div class="user-icon">
+            <svg width="3em" height="2em" viewBox="0 0 16 16" class="bi bi-person-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"/>
+            <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+            <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
+          </svg>
+        </div>
+          
+        <button class="login-btn">
+            <span class="body">login</span>
+        </button>
+      </nav>
+
+        <section class="section">
+          <div class="background">
+            <img class="background" src="./assets/img/background.png" alt="background" style="position: relative; width: 100%; height: 100vh; padding-top: 0">
+          </div>
+
+          <div class="container">
+            <div class="content">
+              <span class="big-title">Pod<strong>blast</strong></span>
+              <span class="subtible">um lugar especial para seus podcasts</span>
+              <p class="body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias suscipit officiis
+                amet vitae a quod, dicta debitis, reprehenderit assumenda sapiente incidunt illum placeat ducimus dolores,
+                dignissimos quisquam excepturi hic voluptatibus.
+              </p>
+            </div>
+
+            <div class="media-row">
+              <div class="media-row-item">
+                <i class="row-item-icon">
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-mic" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+                    <path fill-rule="evenodd" d="M10 8V3a2 2 0 1 0-4 0v5a2 2 0 1 0 4 0zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3z"/>
+                  </svg>
+                </i>
+                <span class="row-item-text">Encontre seus podcasts favoritos</span>
+              </div>
+
+              <div class="media-row-item">
+                <i class="row-item-icon">
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-download" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                    <path fill-rule="evenodd" d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                  </svg>
+                </i>
+                <span class="row-item-text">Faça downloads quando quiser ouvir</span>
+              </div>
+
+              <div class="media-row-item">
+                <i class="row-item-icon">
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-upload" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                    <path fill-rule="evenodd" d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z"/>
+                  </svg>
+                </i>
+                <span class="row-item-text">Crie seu canal e comece a postar</span>
+              </div>
+            </div>
+
+            <h1>podblast</h1>
+
+            <div class="square">
+              <div class="child"></div>
+            </div>
+
+        </section>
+
+        <section class="section-black">
+          <div class="content">
+            <img class="logo" src="../../assets/img/logo.svg" alt="logo">
+              <span class="big-title">Pod<strong>blast</strong></span>
+                <p class="body">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam illum dolore, omnis ex, aspernatur impedit blanditiis reiciendis est quis eius quia molestiae! Debitis, tenetur quaerat! Repellendus similique atque iure fugiat.
+                </p>
+          </div>
+
+        <hr class="line">
+
         <div class="media-row">
-          <div class="media-row-item">
-            <i class="row-item-icon fas fa-podcast"></i>
-            <span class="row-item-text">encontre seus podcasts favoritos</span>
-          </div>
-          <div class="media-row-item">
-            <i class="row-item-icon fas fa-podcast"></i>
-            <span class="row-item-text">encontre seus podcasts favoritos</span>
-          </div>
-          <div class="media-row-item">
-            <i class="row-item-icon fas fa-podcast"></i>
-            <span class="row-item-text">encontre seus podcasts favoritos</span>
-          </div>
+          <ul class="media-row podcast">
+            <li class="media">
+              <img src="./assets/img/Nerdcast_-_2006 1.png" class="media-icon" alt="podcast">
+              <div class="media-body"></div>
+            </li>
+            <li class="media my-4">
+              <img src="./assets/img/Nerdcast_-_2006 1.png" class="media-icon" alt="podcast">
+              <div class="media-body"></div>
+            </li>
+            <li class="media">
+              <img src="./assets/img/Nerdcast_-_2006 1.png" class="media-icon" alt="podcast">
+              <div class="media-body"></div>
+            </li>
+            <li class="media">
+              <img src="./assets/img/Nerdcast_-_2006 1.png" class="media-icon" alt="podcast">
+              <div class="media-body"></div>
+            </li>
+          </ul>
+
+
+
+            
         </div>
+      </section>    
 
-      </div>
+      <footer id="rodape">
+        <span class="subtitle">Sobre</span>
+        <span class="subtitle">Suporte</span>
+        <span class="subtitle">Termos e Responsabilidade</span>
+      </footer>
+        
 
-    </section>
-
-    <section class="section">\
-      <h1>podblast</h1>
-
-      <div class="square">
-        <div class="child"></div>
-      </div>
-    </section>
-
-</body>
+    </body>
 </html>

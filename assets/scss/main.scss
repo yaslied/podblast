@@ -26,8 +26,6 @@
     font-family: 'Roboto-regular';
 
     .identity {
-      // background-color: white !important;
-      // border: 1px solid white;
 
       .logo {
         max-width: $nav_logo_height;
@@ -178,7 +176,7 @@
 
   .container {
     position: absolute;
-    top: 30%;
+    top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -189,12 +187,10 @@
       display: flex;
       flex-flow: column;
       align-items: flex-start;
-      // height: 700px;
+      height: 700px;
 
       .big-title {
         font-weight: lighter;
-        strong {
-          
         }
       }
 
@@ -229,4 +225,11 @@
       }
     }
   }
-}
+
+  .section-black{
+    height: 100vh;
+    // border: 1px solid red;
+    background-color: rgba(0, 0, 0, 0.582);
+    padding: 32px;
+    position: relative;
+  }
