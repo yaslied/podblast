@@ -116,14 +116,14 @@ body {
 }
 
 .regular-btn {
-  min-height: 45px;
+  min-height: 20px;
   min-width: 150px;
   border: none;
-  border-radius: 5px;
-  font-size: 16px;
+  border-radius: 3px;
+  font-size: 14px;
   font-weight: 600;
   font-family: 'Roboto', sans-serif;
-  margin: 0 8px;
+  margin: 0 3px;
 }
 
 .transparent-btn {
@@ -138,7 +138,7 @@ body {
 }
 
 .nav-simple {
-  height: 70px;
+  height: 50px;
   width: 100%;
   padding: 4px 16px;
   background-color: #040505;
@@ -180,15 +180,15 @@ body {
 .nav-simple .identity .logo {
   background-color: #040505;
   max-width: 120px;
-  max-height: 70px;
-  border: 1px solid white;
+  max-height: 30px;
+  border: none;
   margin: 0 8px 0 0;
 }
 
 .nav-simple .identity span {
   font-size: 30px !important;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .nav-simple .identity span strong {
@@ -213,18 +213,19 @@ body {
   margin: 0 16px;
 }
 
-.nav-simple .user-icon {
-  height: 24px;
-  margin: 0 8px;
+.nav-simple .icon-perfil .user-icon {
+  height: 80px;
+  position: relative;
+  padding-left: 960px;
 }
 
 .nav-simple button {
-  margin: 0 0 0 32px;
+  margin-right: 20px;
   background: transparent;
   border: 2px solid white;
   border-radius: 5px;
-  max-height: 45px;
-  padding: 8px 16px;
+  max-height: 40px;
+  padding: 8px 10px;
   text-align: center;
   color: white;
   line-height: 24px;
@@ -242,7 +243,7 @@ body {
 
 .nav-simple button span {
   color: white;
-  margin: 0 8px;
+  margin: 0 px;
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 1px;
@@ -361,7 +362,7 @@ body {
 
 .section .container .content {
   margin: 0 0 32px 0;
-  padding: 8px;
+  padding: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -381,6 +382,7 @@ body {
 .section .container .content span, .section .container .content p {
   color: white;
   text-align: left;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .section .container .media-row {
@@ -430,9 +432,7 @@ body {
 
 .landing-template #section2 {
   position: relative;
-  background-color: #9B00FF;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#9B00FF), color-stop(74%, #e2e1e1));
-  background-image: linear-gradient(180deg, #9B00FF 0%, #e2e1e1 74%);
+  background-color: #202020;
   padding: 32px 0;
 }
 
@@ -504,9 +504,15 @@ body {
   transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1) both;
 }
 
+.landing-template #section2 .container .gallery .media-box .image-podcast{
+  width: 117px;
+  height: 117px;
+}
+
 .landing-template #section2 .footer {
   background-color: #393939;
   width: 100%;
+  height: 30px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
