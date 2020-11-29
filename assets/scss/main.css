@@ -101,18 +101,20 @@ body {
 .dark-btn:hover {
   cursor: pointer;
   color: black;
-  font-weight: bolder;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 
 .light-btn {
-  background-color: #040505;
+  background-color: #fff;
   color: #000;
 }
 
 .light-btn:hover {
   cursor: pointer;
   color: #696969;
-  font-weight: bold;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 
 .regular-btn {
@@ -344,34 +346,10 @@ body {
 }
 
 .section {
-  height: 100vh;
   background-color: #9B00FF;
   padding: 32px;
   position: relative;
   font-family: 'Roboto', sans-serif;
-}
-
-.section .container {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.section .container .content {
-  margin: 0 0 32px 0;
-  padding: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
 
 .section .container .content .big-title {
@@ -423,24 +401,161 @@ body {
   background-size: cover;
 }
 
+.landing-template {
+  font-family: 'Roboto', sans-serif;
+}
+
+.landing-template nav {
+  background-color: #202020;
+}
+
+.landing-template nav .identity {
+  font-family: 'Roboto', sans-serif;
+}
+
+.landing-template nav .identity svg {
+  height: 60px;
+  margin: 0 8px 0 0;
+}
+
 .landing-template #section1 {
   position: relative;
-  height: calc(100vh - $nav_height);
+  height: 800px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 32px;
+}
+
+.landing-template #section1 .container {
+  position: none;
+  color: black;
+  max-height: 650px;
+  min-width: 350px;
+  max-width: 700px;
+  padding: 32px;
+  border-radius: 5px;
+}
+
+.landing-template #section1 .container .content {
+  width: 100%;
+  min-width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 0;
+  position: relative;
+}
+
+.landing-template #section1 .container .content .big-title {
+  font-size: 65px;
+  line-height: 68px;
+  margin: 0 0 16px 0;
+}
+
+.landing-template #section1 .container .content .subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 0 0 32px 0;
+}
+
+.landing-template #section1 .container .content .p {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0 0 32px 0;
+}
+
+.landing-template #section1 .container .media-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 32px 0 0 0;
+}
+
+.landing-template #section1 .container .media-row .media-row-item {
+  min-width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 32px;
+}
+
+.landing-template #section1 .container .media-row .media-row-item:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.landing-template #section1 .container .media-row .media-row-item .row-item-icon {
+  height: 32px;
+  font-size: 32px;
+  color: white;
+}
+
+.landing-template #section1 .container .media-row .media-row-item .row-item-text {
+  text-align: center;
+  margin: 16px 0 0 0;
+  color: white;
 }
 
 .landing-template #section2 {
   position: relative;
-  background-color: #9B00FF;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#9B00FF), color-stop(74%, #e2e1e1));
-  background-image: linear-gradient(180deg, #9B00FF 0%, #e2e1e1 74%);
-  padding: 32px 0;
+  background-color: #202020;
+  padding: 32px;
+  position: relative;
+  height: 900px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 32px;
 }
 
 .landing-template #section2 .container {
   margin: 64px 0 0 0;
-  position: absolute;
-  top: 40%;
-  height: calc(100vh - $nav_height);
   width: 100%;
 }
 
@@ -460,7 +575,12 @@ body {
   max-width: 700px;
   font-size: 16px;
   font-weight: 400;
+  text-align: justify;
   line-height: 22px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 8px;
 }
 
 .landing-template #section2 .container .content .p {
@@ -478,6 +598,8 @@ body {
   border: 1px solid #9B00FF;
   border-radius: 5px;
   margin: 0 8px;
+  background-image: url(../img/card_img.png);
+  background-size: cover;
 }
 
 .landing-template #section2 .container .gallery .media-box::after {
@@ -497,11 +619,10 @@ body {
           transform: translate(-50%, 0);
 }
 
-.landing-template #section2 .container .gallery .media-box::after::hover {
+.landing-template #section2 .container .gallery .media-box:hover {
+  cursor: pointer;
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
-  -webkit-transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1) both;
-  transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1) both;
 }
 
 .landing-template #section2 .footer {
@@ -510,5 +631,216 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.login-template {
+  font-family: 'Roboto', sans-serif;
+}
+
+.login-template nav {
+  background-color: #202020;
+}
+
+.login-template nav .identity {
+  font-family: 'Roboto', sans-serif;
+}
+
+.login-template nav .identity svg {
+  height: 60px;
+  margin: 0 8px 0 0;
+}
+
+.login-template #section1 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 32px;
+}
+
+.login-template #section1 .container {
+  position: none;
+  background-color: #fff;
+  color: black;
+  max-height: 650px;
+  min-width: 350px;
+  max-width: 450px;
+  padding: 32px;
+  border-radius: 5px;
+}
+
+.login-template #section1 .container .content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 0;
+  position: relative;
+}
+
+.login-template #section1 .container .content span {
+  color: black;
+}
+
+.login-template #section1 .container .content .title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  margin: 0 0 0 0;
+}
+
+.login-template #section1 .container .content .subtitle {
+  font-weight: 400 !important;
+  font-size: 16px;
+  line-height: 38px;
+  text-align: center;
+  margin: 0 0 24px 0;
+}
+
+.login-template #section1 .container .content .input-content {
+  width: 100%;
+}
+
+.login-template #section1 .container .content .input-content span {
+  font-weight: 400;
+  font-size: 14px;
+  color: gray;
+}
+
+.login-template #section1 .container .content .input-content input {
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  margin: 0 0 16px 0;
+  padding: 0 8px;
+  font-size: 16px;
+  color: #d3d3d3;
+}
+
+.login-template #section1 .container .content .input-content input:focus {
+  border-bottom: 1px solid #9B00FF !important;
+}
+
+.login-template #section1 .container .content .input-content input:hover {
+  border: 1px solid #9B00FF !important;
+}
+
+.login-template #section1 .container .content button {
+  width: 100%;
+  margin: 0 0 16px 0;
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+}
+
+.login-template #section1 .container .content #btn1 {
+  background-color: #9B00FF;
+  border: none;
+  font-size: 16px;
+}
+
+.login-template #section1 .container .content .separator {
+  height: 1px;
+  width: 100%;
+  background-color: #d3d3d3;
+  margin: 8px 0 24px 0;
+  z-index: 10;
+  position: relative;
+}
+
+.login-template #section1 .container .content .separator::after {
+  position: relative;
+  content: 'ou';
+  top: -8px;
+  left: 50%;
+  font-weight: 500;
+  color: #9B00FF;
+  width: 40px;
+  background-color: white;
+}
+
+.login-template #section1 .container .content #btnPublic {
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  color: #000;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login-template #section1 .container .content #btnPublic i {
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  margin: 0 8px 0 0;
+}
+
+.login-template #section1 .container .content #btnPublic span {
+  line-height: 32px;
+}
+
+.login-template #section1 .container .content #btnPublic:hover {
+  border: 1px solid #9B00FF !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.login-template #section1 .container .content .rg-txt {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 16px 0 0 0;
+}
+
+.login-template #section1 .container .content a {
+  color: #9B00FF;
+  margin: 0 0 24px 0;
+}
+
+.login-template #section1 .container .content a:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.login-template .footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login-template .footer button {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
 /*# sourceMappingURL=main.css.map */
