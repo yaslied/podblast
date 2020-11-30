@@ -17,7 +17,7 @@ class UsuariosController extends AppController
     public function beforeFilter(Event $event)
     {
         parent::beforeFilter($event);
-        $this->Auth->allow(['register', 'recover']);
+        $this->Auth->allow(['register', 'recover', 'home']);
     }
 
     public function login()
