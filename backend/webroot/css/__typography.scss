@@ -1,0 +1,38 @@
+.roboto_regular_base {
+  font-family: 'Roboto';
+  color: #000;
+}
+
+
+.big-title {
+  @extend .roboto_regular_base;
+  font-size: 84px;
+  font-weight: 500;
+  letter-spacing: -1,5px;
+}
+
+.title {
+  @extend .roboto_regular_base;
+  font-size: 48px;
+}
+
+.subtitle {
+  @extend .roboto_regular_base;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.body {
+  @extend .roboto_regular_base;
+  font-size: 16px;
+}
+
+.caption {
+  @extend .roboto_regular_base;
+  font-size: 12px;
+}
+
+.overline {
+  @extend .roboto_regular_base;
+  font-size: 10px;
+}

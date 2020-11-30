@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css");
+@font-face {
+  font-family: 'Roboto';
+  src: url("./fonts/Roboto.ttf") format("truetype");
+}
+
+.roboto_regular_base, .big-title, .title, .subtitle, .body, .caption, .overline {
+  font-family: 'Roboto';
+  color: #000;
+}
+
+.big-title {
+  font-size: 84px;
+  font-weight: 500;
+  letter-spacing: -1,5px;
+}
+
+.title {
+  font-size: 48px;
+}
+
+.subtitle {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.body {
+  font-size: 16px;
+}
+
+.caption {
+  font-size: 12px;
+}
+
+.overline {
+  font-size: 10px;
+}
+
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.3;
+  margin: 0;
+  padding: 0;
+  background-color: #202020;
+  color: #fff;
+}
+
+.section {
+  height: 100vh;
+  background-color: #040505;
+  padding: 32px;
+  position: relative;
+}
+
+.section .container {
+  position: absolute;
+  top: 70%;
+  left: 150%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.section .container .content {
+  margin: 0 0 32px 0;
+  padding: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.section .container .logo {
+  max-width: 120px;
+  max-height: 16px;
+}
+
+.section .container .big-title {
+  font-family: 'Roboto-regular';
+  color: #393939;
+  font-size: smaller;
+}
+
+.section .container .body {
+  color: white;
+}
+
+.section .container .line {
+  idth: min-content;
+  color: white;
+}
+/*# sourceMappingURL=style_pag2.css.map */

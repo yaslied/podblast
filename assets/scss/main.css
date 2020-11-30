@@ -103,29 +103,31 @@ body {
 .dark-btn:hover {
   cursor: pointer;
   color: black;
-  font-weight: bolder;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 
 .light-btn {
-  background-color: #040505;
+  background-color: #fff;
   color: #000;
 }
 
 .light-btn:hover {
   cursor: pointer;
   color: #696969;
-  font-weight: bold;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 
 .regular-btn {
-  min-height: 20px;
+  min-height: 45px;
   min-width: 150px;
   border: none;
-  border-radius: 3px;
-  font-size: 14px;
+  border-radius: 5px;
+  font-size: 16px;
   font-weight: 600;
   font-family: 'Roboto', sans-serif;
-  margin: 0 3px;
+  margin: 0 8px;
 }
 
 .transparent-btn {
@@ -140,7 +142,7 @@ body {
 }
 
 .nav-simple {
-  height: 50px;
+  height: 70px;
   width: 100%;
   padding: 4px 16px;
   background-color: #040505;
@@ -182,15 +184,15 @@ body {
 .nav-simple .identity .logo {
   background-color: #040505;
   max-width: 120px;
-  max-height: 30px;
-  border: none;
+  max-height: 70px;
+  border: 1px solid white;
   margin: 0 8px 0 0;
 }
 
 .nav-simple .identity span {
   font-size: 30px !important;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .nav-simple .identity span strong {
@@ -215,19 +217,18 @@ body {
   margin: 0 16px;
 }
 
-.nav-simple .icon-perfil .user-icon {
-  height: 80px;
-  position: relative;
-  padding-left: 960px;
+.nav-simple .user-icon {
+  height: 24px;
+  margin: 0 8px;
 }
 
 .nav-simple button {
-  margin-right: 20px;
+  margin: 0 0 0 32px;
   background: transparent;
   border: 2px solid white;
   border-radius: 5px;
-  max-height: 40px;
-  padding: 8px 10px;
+  max-height: 45px;
+  padding: 8px 16px;
   text-align: center;
   color: white;
   line-height: 24px;
@@ -245,7 +246,7 @@ body {
 
 .nav-simple button span {
   color: white;
-  margin: 0 px;
+  margin: 0 8px;
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 1px;
@@ -347,24 +348,15 @@ body {
 }
 
 .section {
-  height: 100vh;
   background-color: #9B00FF;
   padding: 32px;
   position: relative;
   font-family: 'Roboto', sans-serif;
 }
 
-.section .container {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
 .section .container .content {
   margin: 0 0 32px 0;
-  padding: 50px;
+  padding: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -375,6 +367,9 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .section .container .content .big-title {
@@ -384,7 +379,6 @@ body {
 .section .container .content span, .section .container .content p {
   color: white;
   text-align: left;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .section .container .media-row {
@@ -422,101 +416,15 @@ body {
   margin: 16px 0 0 0;
 }
 
+.section-black {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.582);
+  padding: 32px;
+  position: relative;
+}
+
 .img-background {
   background-image: url(../img/bg.png) !important;
   background-size: cover;
-}
-
-.landing-template #section1 {
-  position: relative;
-  height: calc(100vh - $nav_height);
-}
-
-.landing-template #section2 {
-  position: relative;
-  background-color: #202020;
-  padding: 32px 0;
-}
-
-.landing-template #section2 .container {
-  margin: 64px 0 0 0;
-  position: absolute;
-  top: 40%;
-  height: calc(100vh - $nav_height);
-  width: 100%;
-}
-
-.landing-template #section2 .container .identity {
-  font-size: 64px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.landing-template #section2 .container .identity span {
-  margin: 0 0 0 16px;
-}
-
-.landing-template #section2 .container .content {
-  margin: 32px 0 0 0;
-  max-width: 700px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22px;
-}
-
-.landing-template #section2 .container .content .p {
-  margin: 8px 0 16px 0;
-}
-
-.landing-template #section2 .container .gallery {
-  margin: 32px 0 0 0;
-}
-
-.landing-template #section2 .container .gallery .media-box {
-  position: relative;
-  height: 120px;
-  width: 120px;
-  border: 1px solid #9B00FF;
-  border-radius: 5px;
-  margin: 0 8px;
-}
-
-.landing-template #section2 .container .gallery .media-box::after {
-  content: 'play';
-  padding: 16px 8px;
-  border: 1px solid #9B00FF;
-  border-radius: 60%;
-  background-color: #9B00FF;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-}
-
-.landing-template #section2 .container .gallery .media-box::after::hover {
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
-  -webkit-transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1) both;
-  transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1) both;
-}
-
-.landing-template #section2 .container .gallery .media-box .image-podcast{
-  width: 117px;
-  height: 117px;
-}
-
-.landing-template #section2 .footer {
-  background-color: #393939;
-  width: 100%;
-  height: 30px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 /*# sourceMappingURL=main.css.map */
