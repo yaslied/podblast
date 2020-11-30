@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload de mídia</title>
+    <link rel="stylesheet" type="text/css" href="../../pages/upload_new_media/style.css" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-1x.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-2x.png" />
+
+    <script src="jquery-3.5.1.min.js"></script>
+
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <script>
+        function funcao1() {
+            alert("Arquivo de mídia enviado!");
+        }
+
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('.image-upload-wrap').hide();
+
+                    $('.file-upload-audio').attr('src', e.target.result);
+                    $('.file-upload-content').show();
+
+                    $('.audio-title').html(input.files[0].name);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+
+            } else {
+                removeUpload();
+            }
+        }
+
+        function removeUpload() {
+            $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+            $('.file-upload-content').hide();
+            $('.media-upload-wrap').show();
+        }
+        $('.audio-upload-wrap').bind('dragover', function () {
+            $('.audio-upload-wrap').addClass('audio-dropping');
+        });
+        $('.audio-upload-wrap').bind('dragleave', function () {
+            $('.audio-upload-wrap').removeClass('audio-dropping');
+        });
+    </script>
+</head>
+
+<body style="background-color: #292929">
+    <!--Navbar-->
+    <div class="upload">
+
+        <nav class="nav-simple">
+            <div class="identity">
+                <img class="logo" src="../../img/logo.png" alt="logo">
+                <span>Pod<strong>blast</strong></span>
+            </div>
+
+            <a href="" class="favorites" style="color: blueviolet;">Favoritos</a>
+
+            <a href="" class="library" style="color: blueviolet; text-align: right;">Biblioteca</a>
+
+
+            <div class="icon-perfil">
+                <img class="user-icon" src="../../img/icon.png" alt="ícone perfil">
+            </div>
+
+            <div class="dropdown">
+
+                <button class="btn btn-secondary dropdown-toggle">
+                    Nome de usuário
+                </button>
+                <div class="dropdown-content" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Meu perfil</a>
+                    <a class="dropdown-item" href="..\index.html">Sair</a>
+                </div>
+            </div>
+
+
+        </nav>
+
+        <!--Corpo da página-->
+        <section id="page" class="">
+
+            <a href=" index.html" class="voltar">
+                < Voltar</a>
+
+                    <h1 class="big-title">Nome da mídia</h1>
+
+                    <h4 class="subtitle">Nome do usuário</h4>
+
+                    <div class="media-box">
+                        <img src="../../img/Nerdcast_-_2006 1.png" alt="image" class="image-podcast">
+                        <p class="legenda">Capa do episódio</p>
+                    </div>
+
+                    <span class="info">
+                        Informações do episódio
+                    </span>
+
+                    <div class="container">
+                        <div class="titulo">
+                            <span>
+                                Título
+                            </span>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Título" aria-label="Título"
+                                    aria-describedby="basic-addon1" style="background-color: transparent;">
+                            </div>
+                        </div>
+
+                        <div class="descricao">
+                            <span>
+                                Descrição
+                            </span>
+                            <div class="input-group mb-3">
+                                <textarea class="form-control" aria-label="Com textarea" aria-describedby="basic-addon1"
+                                    style="background-color: transparent;"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="tag">
+                            <span>
+                                Tag
+                            </span>
+                            <div class="input-group">
+                                <textarea class="form-control" aria-label="Com textarea" aria-describedby="basic-addon1"
+                                    style="background-color: transparent;"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Upload do arquivo-->
+                    
+                    <div class="file-upload">
+                        <div class="audio-upload-wrap">
+                            <input class="file-upload-input" type='file' onchange="readURL(this);" accept="audio/*" />
+                            <div class="drag-text">
+                                <h1>+</h1>
+                                <h5>Adicionar arquivo de áudio</h5>
+                            </div>
+                        </div>
+                        <div class="file-upload-content">
+                            <img class="file-upload-audio" src="#" alt="your audio" />
+                            <div class="audio-title-wrap">
+                                <button type="button" onclick="removeUpload()" class="remove-media">Remove <span
+                                        class="audio-title">Uploaded Audio</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Selecionar qualidade-->
+                    <div class="dropdown qualidade">
+                        <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Qualidade
+                        </button>
+                        <div class="dropdown-content" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Alta(96kbps)</a>
+                            <a class="dropdown-item" href="index.html">Media</a>
+                            <a class="dropdown-item" href="index.html">Baixa(24kbps)</a>
+                        </div>
+                    </div>
+
+                    <!--Botão enviar-->
+                    <input type="button" onclick="funcao1()" value="Enviar" class="btn enviar" />
+
+        </section>
+
+</body>
+
+</html>
