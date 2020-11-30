@@ -1,0 +1,31 @@
+//  GLOBAL SETUPS FOR THIS PROJECT
+
+// sizes
+$nav_height: 70px;
+$footer-height: 70px;
+
+$icon_size1: 16px;
+$icon_size2: 24px;
+$icon_size3: 32px;
+
+$nav_logo_height: 120px;
+$btn_height: 45px;
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.3;
+  margin: 0;
+  padding: 0;
+  background-color: #202020;
+  // background-color: #fff;
+  color: #fff;
+}
