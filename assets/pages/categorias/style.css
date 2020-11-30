@@ -1,5 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css");
+@font-face {
+  font-family: 'Roboto';
+  src: url("./fonts/Roboto.ttf") format("truetype");
+}
+
+.nav-simple {
+    height: 75px;
+    width: 100%;
+    padding: 4px 16px;
+    background-color: #040505;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-family: 'Roboto';
+    font-family: 'Roboto-regular';
+  }
+  
+  .nav-simple .identity {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 16px;
+  }
+  
+  .nav-simple .identity .logo {
+    background-color: #040505;
+    max-width: 120px;
+    max-height: 75px;
+    border: 1px solid white;
+    margin: 0 8px 0 0;
+  }
+  
+  .nav-simple .identity span {
+    font-size: 30px !important;
+    line-height: 24px;
+    font-weight: 400;
+  }
+  
+  .nav-simple .identity span strong {
+    font-size: 30px !important;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  .nav-simple .nav-list {
+    list-style: none;
+    justify-self: right !important;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-left: auto;
+  }
+  
+  .nav-simple .nav-list .nav-list-item {
+    text-transform: none;
+    font-size: 16px;
+    margin: 0 16px;
+  }
+  
+  .nav-simple .user-icon {
+    height: 24px;
+    margin: 0 8px;
+  }
+  
+  .nav-simple button {
+    margin: 0 0 0 32px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    max-height: 45px;
+    padding: 8px 16px;
+    text-align: center;
+    color: white;
+    line-height: 24px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -webkit-transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  
+  .nav-simple button i {
+    color: white;
+    font-size: 16px;
+  }
+  
+  .nav-simple button span {
+    color: white;
+    margin: 0 8px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  .nav-simple button:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
+  }
+  
+  .nav-withList {
+    max-height: 75px;
+    width: 100%;
+    padding: 4px 16px;
+    background-color: #040505;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: 'Roboto-regular';
+  }
+  
+  .nav-withList .identity .logo {
+    max-width: 120px;
+    max-height: 75px;
+  }
+  
+  .nav-withList .nav-list {
+    list-style: none;
+    justify-self: right !important;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-left: auto;
+  }
+  
+  .nav-withList .nav-list .nav-list-item {
+    text-transform: none;
+    font-size: 16px;
+    margin: 0 16px;
+  }
+  
+  .nav-withList .user-icon {
+    height: 24px;
+    margin: 0 8px;
+  }
+  
+  .nav-withList button {
+    margin: 0 0 0 32px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    max-height: 45px;
+    padding: 8px 16px;
+    text-align: center;
+    color: white;
+    line-height: 24px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -webkit-transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  
+  .nav-withList button i {
+    color: white;
+    font-size: 16px;
+  }
+  
+  .nav-withList button span {
+    color: white;
+    margin: 0 8px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  .nav-withList button:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
+  }
+
 body {
-    background: #f2f2f2;
+    background-color: #202020 !important;
     font-family: sans-serif;
     font-size: 15px;
 }
@@ -11,7 +214,9 @@ ul {
 }
 
 button {
+    background-color: black;
     border-radius: 8px;
+    color: white;
     height: 51px;
     margin: 8px 0;
     padding: 15px;
