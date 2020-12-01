@@ -564,32 +564,394 @@ body {
 #section1 {
   background: black;
   height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 40px;
+  color: white;
+}
+
+#section1 .container {
+  border-radius: 5px;
+  max-width: 1200px;
+  min-width: 600px;
+  padding: 16px 32px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#section1 .container .first-line {
+  padding: 8px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#section1 .container .first-line .button {
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 8px;
+  border: none;
+  height: 40px;
+  margin: 0 0 8px 0;
+}
+
+#section1 .container .first-line .button:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  cursor: pointer;
+  border: 1px solid #9B00FF;
+}
+
+#section1 .container .first-line .button i, #section1 .container .first-line .button span {
+  color: white;
+}
+
+#section1 .container .first-line .button i {
+  margin: 0 4px 0 0;
+}
+
+#section1 .container .first-line .subtitle {
+  font-weight: 500;
+  color: white;
+  margin: 0 0 24px 0;
+}
+
+#section1 .container .overline {
+  color: #9B00FF;
 }
 
 #section1 .container .content {
-  max-width: 700px;
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   min-height: 200px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 8px;
+  padding: 0;
   margin: 0 0 8px 0;
 }
 
 #section1 .container .content .brand {
-  height: 400px;
+  max-height: 500px;
+}
+
+#section1 .container .content .brand .img {
+  height: auto;
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+#section1 .container .content .card {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  border-left: 3px solid #9B00FF;
+  border-radius: 2px;
+  padding: 8px;
+  margin: 24px;
+}
+
+#section1 .container .content .card .overline {
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: normal;
+  margin: 0 0 4px 0;
+}
+
+#section1 .container .content .card .title {
+  font-size: 32px;
+  font-weight: 500;
+  color: white;
+  margin: 0 0 4px 0;
+}
+
+#section1 .container .content .card .stats span {
+  color: #393939;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#section1 .container .content .card .stats .separator {
+  color: #393939;
+  margin: 0 16px;
+}
+
+#section1 .container .content .player {
+  margin: 16px 0;
+  padding: 16px 8px;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section1 .container .content .player .controls {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section1 .container .content .player .controls .timer {
+  width: 100%;
+  margin: 0 0 50px 0;
+}
+
+#section1 .container .content .player .controls .timer .slider {
+  background-color: #d3d3d3;
+  height: 2px;
+  width: 100%;
+  margin: 0 0 4px 0;
+  position: relative;
+}
+
+#section1 .container .content .player .controls .timer .slider::after {
+  content: '';
+  background-color: #9B00FF;
+  height: 2px;
+  width: 200px;
+  position: absolute;
+}
+
+#section1 .container .content .player .controls .timer .count {
+  font-size: 10px;
+}
+
+#section1 .container .content .player .controls .actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+#section1 .container .content .player .controls .actions .buttons-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 2px;
+}
+
+#section1 .container .content .player .controls .actions .buttons-left .vol-slider {
+  width: 60px;
+  height: 2px;
+  background-color: #d3d3d3;
+  margin: 0 2px;
+}
+
+#section1 .container .content .player .controls .actions .buttons-left .button {
+  width: 35px;
+  height: 35px;
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+}
+
+#section1 .container .content .player .controls .actions .buttons-left .button:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  cursor: pointer;
+}
+
+#section1 .container .content .player .controls .actions .buttons-left .button .icon {
+  color: #9B00FF;
+  font-size: 16px;
+}
+
+#section1 .container .content .player .controls .actions .buttons-left .button .icon:hover {
+  -webkit-transform: scale(1.03), rotate(40deg);
+          transform: scale(1.03), rotate(40deg);
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#section1 .container .content .player .controls .actions .buttons-left .button .large {
+  color: #9B00FF;
+  font-size: 20px;
+}
+
+#section1 .container .content .player .controls .actions .buttons-left .button .large:hover {
+  -webkit-transform: scale(1.03), rotate(40deg);
+          transform: scale(1.03), rotate(40deg);
+  cursor: pointer;
+  font-size: 24px;
+}
+
+#section1 .container .content .player .controls .actions .buttons-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#section1 .container .content .player .controls .actions .buttons-center .button {
+  width: 45px;
+  height: 45px;
+  background: transparent;
+  border: 2px solid #9B00FF;
+  border-radius: 50%;
+  margin: 0 8px;
+}
+
+#section1 .container .content .player .controls .actions .buttons-center .button:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  cursor: pointer;
+}
+
+#section1 .container .content .player .controls .actions .buttons-center .button .icon {
+  color: #9B00FF;
+  font-size: 16px;
+}
+
+#section1 .container .content .player .controls .actions .buttons-center .button .large {
+  color: #9B00FF;
+  font-size: 20px;
+}
+
+#section1 .container .content .player .controls .actions .buttons-center .button .large:hover {
+  -webkit-transform: scale(1.03), rotate(40deg);
+          transform: scale(1.03), rotate(40deg);
+  cursor: pointer;
+  font-size: 24px;
+}
+
+#section1 .container .content .player .controls .actions .buttons-center .play, #section1 .container .content .player .controls .actions .buttons-center .stop {
+  color: white;
+  width: 55px;
+  height: 55px;
+}
+
+#section1 .container .content .player .controls .actions .buttons-center .undo, #section1 .container .content .player .controls .actions .buttons-center .redo {
+  position: relative;
+  border: none;
+}
+
+#section1 .container .content .player .controls .actions .buttons-center .undo span, #section1 .container .content .player .controls .actions .buttons-center .redo span {
+  color: #9B00FF;
+  font-weight: 500;
+  position: absolute;
+  top: 35px;
+  left: 12px;
+}
+
+#section1 .container .content .player .controls .actions .buttons-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section1 .container .content .player .controls .actions .buttons-right .button {
+  background-color: #9B00FF;
+  border-radius: 5px;
+  padding: 8px;
+  border: none;
+}
+
+#section1 .container .content .player .controls .actions .buttons-right .button:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  cursor: pointer;
+}
+
+#section1 .container .content .player .controls .actions .buttons-right .button i, #section1 .container .content .player .controls .actions .buttons-right .button span {
+  color: white;
+}
+
+#section1 .container .content .player .controls .actions .buttons-right .button i {
+  margin: 0 4px 0 0;
 }
 
 .footer {
