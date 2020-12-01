@@ -1,0 +1,598 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css");
+@font-face {
+  font-family: 'Roboto';
+  src: url("./fonts/Roboto.ttf") format("truetype");
+}
+
+.roboto_regular_base, .big-title, .title, .subtitle, .body, .caption, .overline {
+  font-family: 'Roboto';
+  color: #000;
+}
+
+.big-title {
+  font-size: 84px;
+  font-weight: 500;
+  letter-spacing: -1,5px;
+}
+
+.title {
+  font-size: 48px;
+}
+
+.subtitle {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.body {
+  font-size: 16px;
+}
+
+.caption {
+  font-size: 12px;
+}
+
+.overline {
+  font-size: 10px;
+}
+
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.3;
+  margin: 0;
+  padding: 0;
+  background-color: #202020;
+  color: #fff;
+}
+
+.d-none {
+  display: none;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.jus-con-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.al-it-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dark-btn {
+  background-color: #040505;
+  color: #fff;
+}
+
+.dark-btn:hover {
+  cursor: pointer;
+  color: black;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.light-btn {
+  background-color: #fff;
+  color: #000;
+}
+
+.light-btn:hover {
+  cursor: pointer;
+  color: #696969;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.regular-btn {
+  min-height: 45px;
+  min-width: 150px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  margin: 0 8px;
+}
+
+.transparent-btn {
+  background-color: transparent !important;
+}
+
+.app-page {
+  background-color: #393939;
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav-simple {
+  height: 75px;
+  width: 100%;
+  padding: 4px 16px;
+  background-color: #040505;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Roboto';
+  font-family: 'Roboto-regular';
+}
+
+.nav-simple .identity {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 16px;
+}
+
+.nav-simple .identity .logo {
+  background-color: #040505;
+  max-width: 120px;
+  max-height: 75px;
+  border: 1px solid white;
+  margin: 0 8px 0 0;
+}
+
+.nav-simple .identity span {
+  font-size: 30px !important;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.nav-simple .identity span strong {
+  font-size: 30px !important;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-simple .nav-list {
+  list-style: none;
+  justify-self: right !important;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: auto;
+}
+
+.nav-simple .nav-list .nav-list-item {
+  text-transform: none;
+  font-size: 16px;
+  margin: 0 16px;
+}
+
+.nav-simple .user-icon {
+  height: 24px;
+  margin: 0 8px;
+}
+
+.nav-simple button {
+  margin: 0 0 0 32px;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  max-height: 45px;
+  padding: 8px 16px;
+  text-align: center;
+  color: white;
+  line-height: 24px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav-simple button i {
+  color: white;
+  font-size: 16px;
+}
+
+.nav-simple button span {
+  color: white;
+  margin: 0 8px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.nav-simple button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.nav-withList {
+  max-height: 75px;
+  width: 100%;
+  padding: 4px 16px;
+  background-color: #040505;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Roboto-regular';
+}
+
+.nav-withList .identity .logo {
+  max-width: 120px;
+  max-height: 75px;
+}
+
+.nav-withList .nav-list {
+  list-style: none;
+  justify-self: right !important;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: auto;
+}
+
+.nav-withList .nav-list .nav-list-item {
+  text-transform: none;
+  font-size: 16px;
+  margin: 0 16px;
+}
+
+.nav-withList .user-icon {
+  height: 24px;
+  margin: 0 8px;
+}
+
+.nav-withList button {
+  margin: 0 0 0 32px;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  max-height: 45px;
+  padding: 8px 16px;
+  text-align: center;
+  color: white;
+  line-height: 24px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav-withList button i {
+  color: white;
+  font-size: 16px;
+}
+
+.nav-withList button span {
+  color: white;
+  margin: 0 8px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.nav-withList button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.footer {
+  height: 70px;
+}
+
+.absolute-bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.section {
+  background-color: #9B00FF;
+  padding: 32px;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+}
+
+.section .container .content {
+  margin: 0 0 32px 0;
+  padding: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.section .container .content .big-title {
+  font-weight: lighter;
+}
+
+.section .container .content span, .section .container .content p {
+  color: white;
+  text-align: left;
+}
+
+.section .container .media-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+}
+
+.section .container .media-row .media-row-item {
+  min-width: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 32px;
+}
+
+.section .container .media-row .media-row-item .row-item-icon {
+  height: 32px;
+  font-size: 32px;
+}
+
+.section .container .media-row .media-row-item .row-item-text {
+  text-align: center;
+  margin: 16px 0 0 0;
+}
+
+.section-black {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.582);
+  padding: 32px;
+  position: relative;
+}
+
+.img-background {
+  background-image: url(../img/bg.png) !important;
+  background-size: cover;
+}
+
+.nav-withList {
+  max-height: 75px;
+  width: 100%;
+  padding: 4px 16px;
+  background-color: #040505;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  font-family: 'Roboto-regular';
+}
+
+.nav-withList .identity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-withList .identity .logo {
+  max-width: 120px;
+  max-height: 75px;
+  border: none;
+  margin: 0 16px 0 0;
+}
+
+.nav-withList .nav-list {
+  list-style: none;
+  justify-self: right !important;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: auto;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 0 16px;
+}
+
+.nav-withList .nav-list .nav-list-item {
+  text-transform: none;
+  font-size: 16px;
+  margin: 0 8px;
+  border: none;
+}
+
+.nav-withList .nav-list .nav-list-item:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  cursor: pointer;
+}
+
+.nav-withList .nav-list .nav-list-item span {
+  color: #9B00FF;
+}
+
+.nav-withList .right-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-withList .right-area img {
+  height: 50px;
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 50%;
+}
+
+.nav-withList .right-area button {
+  margin: 0 0 0 8px;
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+  max-height: 45px;
+  padding: 4px 8px;
+  text-align: center;
+  color: white;
+  line-height: 24px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav-withList .right-area button i {
+  color: white;
+  font-size: 16px;
+}
+
+.nav-withList .right-area button i:hover {
+  color: #9B00FF !important;
+}
+
+.nav-withList .right-area button span {
+  color: white;
+  margin: 0 8px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.nav-withList .right-area button span:hover {
+  color: #9B00FF !important;
+}
+
+.nav-withList .right-area button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  color: #9B00FF !important;
+}
+
+#section1 {
+  background: black;
+  height: 100%;
+}
+
+#section1 .container .content {
+  max-width: 700px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 200px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 8px;
+  margin: 0 0 8px 0;
+}
+
+#section1 .container .content .brand {
+  height: 400px;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.footer {
+  height: 70px;
+}
+/*# sourceMappingURL=style.css.map */

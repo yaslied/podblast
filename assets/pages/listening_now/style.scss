@@ -1,0 +1,145 @@
+
+@import '../../scss/main.scss';
+
+.nav-withList {
+  max-height: $nav_height;
+  width: 100%;
+  padding: 4px 16px;
+  background-color: $dark_bg;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between !important;
+
+  font-family: 'Roboto-regular';
+
+  .identity {
+    // background-color: white !important;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    .logo {
+      max-width: $nav_logo_height;
+      max-height: $nav_height;
+      border: none;
+      margin: 0 16px 0 0;
+    }
+  }
+
+  .nav-list {
+    list-style: none;
+    justify-self: right !important;
+    display: inline-flex;
+    margin-left: auto;
+    align-self: center;
+    margin: 0 16px;
+
+    .nav-list-item {
+      text-transform: none;
+      font-size: 16px;
+      margin: 0 8px;
+      border: none;
+
+      &:hover {
+        transform: scale(1.01);
+        cursor: pointer;
+      }
+
+      span {
+        color: $purple;
+      }
+    }
+  }
+
+  .right-area {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    img {
+      height: $icon_size4;
+      width: auto;
+      object-fit: contain;
+      border-radius: 50%;
+    }
+
+    button {
+      // justify-self: flex-end;
+      margin: 0 0 0 8px;
+      background: transparent;
+      border: none;
+      border-radius: 5px;
+      max-height: $btn_height;
+      padding: 4px 8px;
+      text-align: center;
+      color: white;
+      line-height: 24px;
+      align-self: center;
+      transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+      i {
+        color: white;
+        font-size: 16px;
+
+        &:hover {
+          color: $purple !important;
+        }
+      }
+
+      span {
+        color: white;
+        margin: 0 8px;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 1px;
+
+        &:hover {
+          color: $purple !important;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.01);
+        color: $purple !important;
+      }
+    }
+  }
+  
+}
+
+#section1 {
+  background: black;
+  height: 100%;
+
+  .container {
+
+    .title {
+
+    }
+
+    .content {
+      // border: 1px solid white;
+      max-width: 700px;
+      height: fit-content;
+      min-height: 200px;
+      align-self: center;
+      align-items: center;
+      justify-content: center;
+      padding: 8px;
+      margin: 0 0 8px 0;
+
+        .brand {
+            height: 400px;
+            width: 100%;
+            object-fit: contain;
+        }
+
+    }
+  }
+}
+
+.footer {
+  height: $footer-height;
+}
