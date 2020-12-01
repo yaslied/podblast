@@ -12,6 +12,10 @@ use App\Controller\AppController;
  */
 class CanaisController extends AppController
 {
+    public function discover()
+    {
+        $canais = $this->paginate($this->Canais);
+    }
     /**
      * Index method
      *

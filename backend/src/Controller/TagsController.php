@@ -12,6 +12,10 @@ use App\Controller\AppController;
  */
 class TagsController extends AppController
 {
+    public function list()
+    {
+        $tags = $this->paginate($this->Tags);
+    }
     /**
      * Index method
      *

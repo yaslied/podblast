@@ -20,13 +20,18 @@ class UsuariosController extends AppController
         $this->Auth->allow(['register', 'recover', 'home']);
     }
 
+    public function profile()
+    {
+        $usuarios = $this->paginate($this->Usuarios);
+    }
+
     public function login()
     {
         if ($this->request->is('post')) {
             $user = $this->Auth->identify();
             if ($user) {                   
                 $this->Auth->setUser($user);
-                return $this->redirect($this->Auth->redirectUrl());
+                return $this->redirect($this->Auth->redirectUrl('/profile'));
             } else {
                 $this->Flash->error(__('Login ou senha incorreto.'));
             }

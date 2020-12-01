@@ -12,6 +12,10 @@ use App\Controller\AppController;
  */
 class PodcastsController extends AppController
 {
+    public function newEp()
+    {
+        $podcasts = $this->paginate($this->Podcasts);
+    }
     /**
      * Index method
      *
