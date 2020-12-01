@@ -142,7 +142,7 @@ body {
 }
 
 .nav-simple {
-  height: 70px;
+  height: 75px;
   width: 100%;
   padding: 4px 16px;
   background-color: #040505;
@@ -184,7 +184,7 @@ body {
 .nav-simple .identity .logo {
   background-color: #040505;
   max-width: 120px;
-  max-height: 70px;
+  max-height: 75px;
   border: 1px solid white;
   margin: 0 8px 0 0;
 }
@@ -259,7 +259,7 @@ body {
 }
 
 .nav-withList {
-  max-height: 70px;
+  max-height: 75px;
   width: 100%;
   padding: 4px 16px;
   background-color: #040505;
@@ -278,8 +278,7 @@ body {
 
 .nav-withList .identity .logo {
   max-width: 120px;
-  max-height: 70px;
-  border: 1px solid white;
+  max-height: 75px;
 }
 
 .nav-withList .nav-list {
