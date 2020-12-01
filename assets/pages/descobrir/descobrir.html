@@ -5,73 +5,218 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Descobrir</title>
 
-    <link rel="stylesheet" type="text/css" href="../descobrir/style.css" />
     <link
-      href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       rel="stylesheet"
-      id="bootstrap-css"
+      type="text/css"
+      href="../../pages/descobrir/style.css"
     />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-1x.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-2x.png" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/path/to/flickity.css" media="screen" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body style="background-color: #202020">
-    <nav class="navbar">
+
+  <body style="background-color: #202020; overflow-x: hidden;">
+    <!--Navbar-->
+    <nav class="nav-simple">
       <div class="identity">
-        <!-- <img class="logo" src="../../../img/logo@2x.jpg" alt="logo"> -->
-        <svg
-          width="69"
-          height="51"
-          viewBox="0 0 69 51"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
+        <img class="logo" src="../../img/logo.png" alt="logo" />
+        <span>Pod<strong>blast</strong></span>
+      </div>
+
+      <a href="" class="favorites" style="color: blueviolet">Favoritos</a>
+
+      <a href="" class="library" style="color: blueviolet; text-align: right"
+        >Biblioteca</a
+      >
+
+      <div class="icon-perfil">
+        <img class="user-icon" src="../../img/icon.png" alt="ícone perfil" />
+      </div>
+
+      <div class="dropdown">
+        <button
+          class="btn btn-dark dropdown-toggle"
+          type="button"
+          id="dropdownMenu2"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
         >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M69 25.5C59.0962 26.8829 60.9763 37.2238 58.3194 37.2238C56.2892 37.2238 56.5452 29.0497 54.162 29.0497C51.7787 29.0497 51.0637 45.7679 48.0184 45.7679C44.9731 45.7679 43.958 27.887 42.378 27.887C40.798 27.887 39.7564 42.5617 37.532 42.5793C35.2988 42.5969 34.7251 27.7725 32.2977 27.7725C29.8703 27.7725 30.038 51 26.8868 51C23.7356 51 23.1707 27.8606 20.7609 27.8606C18.36 27.8606 17.4332 37.2855 15.8267 37.2855C12.2782 37.2855 16.6211 26.328 0 25.5C9.83318 24.1523 8.70334 13.5912 10.9277 13.5912C13.4081 13.5912 12.9138 21.871 15.0411 21.871C17.7509 21.8798 18.5277 0 21.6789 0C24.8301 0 24.6536 23.2275 27.0898 23.2275C29.5172 23.2275 30.091 8.40311 32.3242 8.42072C34.5574 8.43834 35.5901 23.113 37.1701 23.113C38.7502 23.113 39.7653 5.23212 42.8105 5.23212C45.8558 5.23212 46.1118 23.3684 48.9541 23.3684C51.1078 23.3684 51.0637 13.7762 53.1116 13.7762C55.7685 13.7762 53.8883 24.1083 63.7921 25.5H69Z"
-            fill="url(#paint0_linear)"
-          />
-          <defs>
-            <linearGradient
-              id="paint0_linear"
-              x1="11.2527"
-              y1="41.3932"
-              x2="56.1952"
-              y2="6.02558"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop offset="0.0395101" stop-color="#9B00FF" />
-              <stop offset="0.4757" stop-color="#F900F9" />
-              <stop offset="1" stop-color="#FFCE00" />
-            </linearGradient>
-          </defs>
-        </svg>
-        <span>Pob<strong>blast</strong></span>
-
-        <div class="container">
-          <a href="#" class="favorites">Favoritos</a>
-        </div>
-
-        <div class="container">
-          <a href="#" class="library">Biblioteca</a>
+          Nome de usuário
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <button
+            class="dropdown-item"
+            type="button"
+            href="../profile_p/perfil.html"
+          >
+            <i class="far fa-user"></i>Meu perfil
+          </button>
+          <button
+            class="dropdown-item"
+            type="button"
+            href="../landing/index.html"
+          >
+            <i class="fas fa-sign-out-alt"></i>Sair
+          </button>
         </div>
       </div>
     </nav>
 
-    <section class="tpodcast">
-      <div class="container scroll"><h5>Top Podcasts</h5></div>
+    <!--Conteúdo-->
+    <!--Seção TopPodcast-->
+    <section class="top-podcast">
+      <div class="container-flex scroll">
+        <h5>Top Podcasts</h5>
+        <div class="gallery row">
+          <button class="media-box">
+            <div class="footer"> 
+              Nerdcast
+              <i class="fas fa-heart"></i>
+            </div>
+          </button>
+          <button class="media-box">
+            <div class="footer"> 
+              Nerdcast
+              <i class="fas fa-heart"></i>
+            </div>
+          </button>
+          <button class="media-box">
+            <div class="footer"> 
+              Nerdcast
+              <i class="fas fa-heart"></i>
+            </div>
+          </button>
+          <button class="media-box">
+            <div class="footer"> 
+              Nerdcast
+              <i class="fas fa-heart"></i>
+            </div>
+          </button>
+          <button class="media-box">
+            <div class="footer"> 
+              Nerdcast
+              <i class="fas fa-heart"></i>
+            </div>
+          </button>
+          <button class="media-box">
+            <div class="footer"> 
+              Nerdcast
+              <i class="fas fa-heart"></i>
+            </div>
+          </button>
+          <button class="media-box">
+            <div class="footer"> 
+              Nerdcast
+              <i class="fas fa-heart"></i>
+            </div>
+          </button>
+          <button class="media-box">
+            <div class="footer"> 
+              Nerdcast
+              <i class="fas fa-heart"></i>
+            </div>
+          </button>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="">
-        <div class="container scrol">
-            Recomendados para você
+    <!--Seção Recomendados-->
+    <section class="recomended">
+      <div class="container-flex scroll">
+        <h5>Recomendados para você</h5>
+        <div class="gallery row">
+          <button class="media-box">
+            <div class="footer"> 
+              Nerdcast
+              <i class="fas fa-heart"></i>
+            </div>
+          </button>
+          <button class="media-box">
+            <div class="footer"> 
+              Nerdcast
+              <i class="fas fa-heart"></i>
+            </div>
+          </button>
+          <button class="media-box">
+            <div class="footer"> 
+              Nerdcast
+              <i class="fas fa-heart"></i>
+            </div>
+          </button>
+          <button class="media-box">
+            <div class="footer"> 
+              Nerdcast
+              <i class="fas fa-heart"></i>
+            </div>
+          </button>
+          <button class="media-box">
+            <div class="footer"> 
+              Nerdcast
+              <i class="fas fa-heart"></i>
+            </div>
+          </button>
+          <button class="media-box">
+            <div class="footer"> 
+              Nerdcast
+              <i class="fas fa-heart"></i>
+            </div>
+          </button>
+          <button class="media-box">
+            <div class="footer"> 
+              Nerdcast
+              <i class="fas fa-heart"></i>
+            </div>
+          </button>
+          <button class="media-box">
+            <div class="footer"> 
+              Nerdcast
+              <i class="fas fa-heart"></i>
+            </div>
+          </button>
+          </div>
         </div>
+      </div>
     </section>
 
-    <section>
-        <div class="container scroll">
-            <h5>
-                Por categoria
-            </h5>
+    <!--Seção Categoria-->
+    <section class="categorie scroll">
+      <div class="gallery">
+        <h5 class="categoria">Por categoria</h5>
+        <a href="../../pages/categorias/categorias.html" class="ver-tudo">Ver tudo</a>
+        <div class="grid-container">
+          <a href="#" class="grid-item com">
+            Comédia<i class="fas fa-theater-masks"></i></a>
+          <a href="#" class="grid-item mus">Música<i class="fas fa-music"></i></a>
+          <a href="#" class="grid-item esp">Esportes<i class="fas fa-futbol"></i></a>
+          <a href="#" class="grid-item sau">Saúde<i class="fas fa-heartbeat"></i></a>
+          <a href="#" class="grid-item cin">Cinema<i class="fas fa-tv"></i></a>
+          <a href="#" class="grid-item edu">Educação<i class="fas fa-user-graduate"></i></a>
         </div>
+      </div>
     </section>
   </body>
 </html>
