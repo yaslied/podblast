@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+/* No CSS *//*# sourceMappingURL=style.css.map */
+=======
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css");
 @font-face {
@@ -375,3 +378,4 @@ a.ver-tudo:hover{
 a:hover{
   text-decoration: none !important;
 }
+>>>>>>> 9511d4d635e58500f133dcf8a438200c3759f878

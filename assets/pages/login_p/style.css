@@ -366,7 +366,7 @@ body {
           align-items: flex-start;
   height: -webkit-fit-content;
   height: -moz-fit-content;
-  height: 60vh;
+  height: fit-content;
 }
 
 .section .container .content .big-title {
@@ -421,7 +421,7 @@ body {
 }
 
 .img-background {
-  background-image: url(../../img/bg.png) !important;
+  background-image: url(../img/bg.png) !important;
   background-size: cover;
 }
 
@@ -483,7 +483,6 @@ body {
       align-self: center;
   padding: 0;
   position: relative;
-  margin-bottom: 65px;
 }
 
 .login-template #section1 .container .content span {
@@ -536,7 +535,7 @@ body {
 .login-template #section1 .container .content button {
   width: 100%;
   margin: 0 0 16px 0;
-  height: 50px !important;
+  height: 40px;
   border-radius: 5px;
   color: white;
 }
@@ -545,8 +544,6 @@ body {
   background-color: #9B00FF;
   border: none;
   font-size: 16px;
-  padding-top: 12px;
-  padding-bottom: 12px;
 }
 
 .login-template #section1 .container .content .separator {
@@ -632,15 +629,9 @@ body {
           justify-content: center;
 }
 
-
 .login-template .footer button {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.5px;
-}
-
-.esqueci{
-  padding-left: 220px;
-  font-size: 13px;
 }
 /*# sourceMappingURL=style.css.map */
