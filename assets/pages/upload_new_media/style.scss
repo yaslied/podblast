@@ -1,0 +1,208 @@
+
+@import '../../scss/main.scss';
+
+.upload {
+
+  .nav-simple {
+
+  }
+
+  #page {
+    padding: 32px;
+
+    .voltar {
+      text-transform: lowercase;
+      color: $purple;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    button {
+      background-color: $purple;
+      color: white;
+      border-radius: 5px;
+      border: none;
+      margin: 16px 0;
+    }
+
+    .btn-back {
+      background-color: transparent;
+      border: none;
+      padding: 0 8px;
+      margin: 0 0 32px 0;
+
+      i {
+        margin: 0 8px 0 0;
+        color: $purple;
+      }
+
+      span {
+        text-transform: lowercase;
+        color: $purple;
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+
+    .container {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+
+      .brand-content {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        margin: 0 0 40px 0;
+
+        .media-box {
+          width: fit-content;
+          margin: 0 16px 0 0;
+          display: flex;
+          flex-flow: column nowrap;
+          align-items: center;
+  
+          .image-podcast {
+  
+          }
+
+          .addImg {
+            background-color: transparent;
+            border: 2px solid $purple;
+            border-radius: 5px;
+            margin: 8px 0 0 0;
+
+            &:hover {
+              transform: scale(1.02);
+              cursor: pointer;
+            }
+
+            .legenda {
+              text-transform: lowercase;
+              font-size: 14px;
+              font-weight: 500;
+              color: $purple;
+            }
+          }
+
+        }
+
+        .brand-view {
+          display: flex;
+          flex-flow: column nowrap;
+          align-items: flex-start;
+          
+
+          .title {
+            font-size: 48px;
+            color: white;
+            font-weight: 500;
+          }
+
+          .subtitle {
+            font-size: 24px;
+            color: $purple;
+            font-weight: normal;
+            text-transform: lowercase;
+          }
+        }
+      }
+
+      .form {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 600px;
+
+        .info {
+          font-size: 18px;
+          color: $gray_light;
+          margin: 0 0 16px 0;
+        }
+
+        .field-content {
+          span {
+            color: $gray_light;
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: lowercase;
+            margin: 0 0 4px 0;
+          }
+
+
+        }
+      }
+
+      .file-upload {
+        margin: 32px 0 0 0;
+
+        .audio-upload-wrap {
+
+          .file-upload-input {
+            background-color: $purple;
+          }
+
+          .drag-text {
+            height: 100px;
+            border: 1px solid $purple;
+            border-radius: 5px;
+            display:flex;
+            flex-flow: row nowrap;
+            align-items: center;
+
+            &:hover {
+              transform: scale(1.02);
+              cursor: pointer;
+            }
+
+            .sign {
+              font-size: 40px;
+              line-height: 40px;
+              color: $purple;
+              margin: 0 16px;
+            }
+
+            span {
+              font-size: 24px;
+              line-height: 40px;
+              color: $purple;
+            }
+          }
+        }
+      }
+
+      .qualidade {
+
+        .dropdown-content {
+          padding: 8px 0;
+
+          .dropdown-item {
+            padding: 4px 8px;
+            margin: 0 0 8px 0;
+            color: white;
+            background: transparent !important;
+            border: 1px solid $purple;
+            border-radius: 5px;
+
+            font-size: 16px;
+            text-transform: lowercase;
+
+            &:hover {
+              border: 1px solid $purple;
+              border-radius: 5px;
+              cursor: pointer;
+              transform: scale(1.02);
+              color: $purple;
+            }
+          }
+        }
+      }
+
+      .enviar {
+        width: 90%;
+        margin: 40px 0 0 0;
+        background-color: $purple;
+        color: white;
+      }
+    }
+  }
+}

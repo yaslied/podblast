@@ -58,125 +58,135 @@
 </head>
 
 <body style="background-color: #292929">
-    <!--Navbar-->
-    <div class="upload">
+  <!--Navbar-->
+  <div class="upload">
 
-        <nav class="nav-simple">
-            <div class="identity">
-                <img class="logo" src="../../img/logo.png" alt="logo">
-                <span>Pod<strong>blast</strong></span>
+    <nav class="nav-simple">
+        <div class="identity">
+            <img class="logo" src="../../img/logo.png" alt="logo">
+            <span>Pod<strong>blast</strong></span>
+        </div>
+
+        <a href="" class="favorites" style="color: blueviolet;">Favoritos</a>
+
+        <a href="" class="library" style="color: blueviolet; text-align: right;">Biblioteca</a>
+
+
+        <div class="icon-perfil">
+            <img class="user-icon" src="../../img/icon.png" alt="ícone perfil">
+        </div>
+
+        <div class="dropdown">
+
+            <button class="btn btn-secondary dropdown-toggle">
+                Nome de usuário
+            </button>
+            <div class="dropdown-content" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Meu perfil</a>
+                <a class="dropdown-item" href="..\index.html">Sair</a>
             </div>
-
-            <a href="" class="favorites" style="color: blueviolet;">Favoritos</a>
-
-            <a href="" class="library" style="color: blueviolet; text-align: right;">Biblioteca</a>
+        </div>
 
 
-            <div class="icon-perfil">
-                <img class="user-icon" src="../../img/icon.png" alt="ícone perfil">
+    </nav>
+
+    <!--Corpo da página-->
+    <section id="page" class="">
+
+      <!-- <a href=" index.html" class="voltar"> Voltar</a> -->
+      <button class="button btn-back" data-icon="B" aria-label="rewind">
+        <i class="icon fas fa-chevron-left"></i>
+        <span>voltar</span>
+      </button>
+
+      <div class="container">
+
+        <div class="brand-content">
+          <div class="media-box">
+            <img src="../../img/Nerdcast_-_2006 1.png" alt="image" class="image-podcast">
+
+            <button class="addImg">
+              <span class="legenda">adicionar capa</span>
+            </button>
+          </div>
+
+          <div class="brand-view">
+            <span class="title">Nome da mídia</span>
+            <span class="subtitle">Nome do usuário</span>
+          </div>
+        </div>
+
+        <div class="form">
+          <span class="info">Informações do episódio</span>
+
+          <div class="field-content titulo">
+            <span>Título</span>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Título" aria-label="Título"
+                    aria-describedby="basic-addon1" style="background-color: transparent;">
             </div>
-
-            <div class="dropdown">
-
-                <button class="btn btn-secondary dropdown-toggle">
-                    Nome de usuário
-                </button>
-                <div class="dropdown-content" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="#">Meu perfil</a>
-                    <a class="dropdown-item" href="..\index.html">Sair</a>
-                </div>
+          </div>
+  
+          <div class="field-content descricao">
+            <span>Descrição</span>
+            <div class="input-group mb-3">
+                <textarea class="form-control" aria-label="Com textarea" aria-describedby="basic-addon1"
+                    style="background-color: transparent;"></textarea>
             </div>
+          </div>
+  
+          <div class="field-content tag">
+            <span>Tag</span>
+            <div class="input-group">
+                <textarea class="form-control" aria-label="Com textarea" aria-describedby="basic-addon1"
+                    style="background-color: transparent;"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="file-upload">
+          <div class="audio-upload-wrap">
+            <input class="file-upload-input" type='file' onchange="readURL(this);" accept="audio/*" />
+            <div class="drag-text">
+                <h1 class="sign">+</h1>
+                <span>Adicionar arquivo de áudio</span>
+            </div>
+          </div>
+          <div class="file-upload-content">
+            <img class="file-upload-audio" src="#" alt="your audio" />
+            <div class="audio-title-wrap">
+                <button type="button" onclick="removeUpload()" class="remove-media">Remove <span class="audio-title">Uploaded Audio</span></button>
+            </div>
+          </div>
+        </div>
+
+        <!--Selecionar qualidade-->
+        <div class="dropdown qualidade">
+          <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Qualidade
+          </button>
+          <div class="dropdown-content" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Alta(96kbps)</a>
+            <a class="dropdown-item" href="index.html">Media</a>
+            <a class="dropdown-item" href="index.html">Baixa(24kbps)</a>
+          </div>
+        </div>
+
+        <!--Botão enviar-->
+        <input type="button" onclick="funcao1()" value="Enviar" class="btn enviar" />
+        
+      </div>
 
 
-        </nav>
+      <!--Upload do arquivo-->
+      
 
-        <!--Corpo da página-->
-        <section id="page" class="">
+      
 
-            <a href=" index.html" class="voltar">
-                < Voltar</a>
+    </section>
 
-                    <h1 class="big-title">Nome da mídia</h1>
-
-                    <h4 class="subtitle">Nome do usuário</h4>
-
-                    <div class="media-box">
-                        <img src="../../img/Nerdcast_-_2006 1.png" alt="image" class="image-podcast">
-                        <p class="legenda">Capa do episódio</p>
-                    </div>
-
-                    <span class="info">
-                        Informações do episódio
-                    </span>
-
-                    <div class="container">
-                        <div class="titulo">
-                            <span>
-                                Título
-                            </span>
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Título" aria-label="Título"
-                                    aria-describedby="basic-addon1" style="background-color: transparent;">
-                            </div>
-                        </div>
-
-                        <div class="descricao">
-                            <span>
-                                Descrição
-                            </span>
-                            <div class="input-group mb-3">
-                                <textarea class="form-control" aria-label="Com textarea" aria-describedby="basic-addon1"
-                                    style="background-color: transparent;"></textarea>
-                            </div>
-                        </div>
-
-                        <div class="tag">
-                            <span>
-                                Tag
-                            </span>
-                            <div class="input-group">
-                                <textarea class="form-control" aria-label="Com textarea" aria-describedby="basic-addon1"
-                                    style="background-color: transparent;"></textarea>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Upload do arquivo-->
-                    
-                    <div class="file-upload">
-                        <div class="audio-upload-wrap">
-                            <input class="file-upload-input" type='file' onchange="readURL(this);" accept="audio/*" />
-                            <div class="drag-text">
-                                <h1>+</h1>
-                                <h5>Adicionar arquivo de áudio</h5>
-                            </div>
-                        </div>
-                        <div class="file-upload-content">
-                            <img class="file-upload-audio" src="#" alt="your audio" />
-                            <div class="audio-title-wrap">
-                                <button type="button" onclick="removeUpload()" class="remove-media">Remove <span
-                                        class="audio-title">Uploaded Audio</span></button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Selecionar qualidade-->
-                    <div class="dropdown qualidade">
-                        <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Qualidade
-                        </button>
-                        <div class="dropdown-content" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="#">Alta(96kbps)</a>
-                            <a class="dropdown-item" href="index.html">Media</a>
-                            <a class="dropdown-item" href="index.html">Baixa(24kbps)</a>
-                        </div>
-                    </div>
-
-                    <!--Botão enviar-->
-                    <input type="button" onclick="funcao1()" value="Enviar" class="btn enviar" />
-
-        </section>
+  </div>
 
 </body>
 
