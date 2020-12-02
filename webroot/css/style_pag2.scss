@@ -1,0 +1,52 @@
+@import './__mixins.scss';
+@import './__fonts.scss';
+@import './__colors.scss';
+@import './__typography.scss';
+@import './__globals.scss';
+
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css");
+
+.section {
+    height: 100vh;
+    background-color: $dark_bg;
+    padding: 32px;
+    position: relative;
+
+    .container{
+        position: absolute;
+        top: 70%;
+        left: 150%;
+        transform: translate(-50%, -50%);
+
+        .content{
+            margin: 0 0 32px 0;
+            padding: 8px;
+            display: flex;
+            flex-flow: column;
+            align-items: flex-start;
+        }
+
+        .logo{
+            max-width: $nav_logo_height;
+            max-height: $icon_size1;
+        }   
+
+        .big-title{
+            font-family: 'Roboto-regular';
+            color: $primary_dark;
+            font-size: smaller;
+        }
+
+        .body{
+            color: white;
+        }
+
+        .line{
+            idth: min-content;
+            color: white;
+        }
+    }
+}                                                               
+
+    
