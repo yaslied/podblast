@@ -8,7 +8,7 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="../../pages/favoritos/sytle.css"
+      href="../../pages/episodios_saude/style.css"
     />
 
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-1x.png" />
@@ -49,58 +49,60 @@
         <span class="podblast">Pod<strong>blast</strong></span>
       </div>
 
-      <form action="search" method="post" class="form-search">
-        <div class="container">
-          <input type="search" id="busca" name="q" />
-          <button type="submit" class="search"><i class="fas fa-search"></i></button>
-        </div>
-      </form>
-
       <a href="" class="favorites" style="color: blueviolet">Favoritos</a>
 
       <a href="" class="library" style="color: blueviolet; text-align: right"
         >Biblioteca</a
       >
 
-      <div class="menu container">
-        <div class="icon-perfil">
-          <img class="user-icon" src="../../img/icon.png" alt="ícone perfil" />
-        </div>
-  
-        <div class="dropdown">
+      <div class="icon-perfil">
+        <img class="user-icon" src="../../img/icon.png" alt="ícone perfil" />
+      </div>
+
+      <div class="dropdown">
+        <button
+          class="btn btn-dark dropdown-toggle"
+          type="button"
+          id="dropdownMenu2"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Nome de usuário
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
           <button
-            class="btn btn-dark dropdown-toggle"
+            class="dropdown-item"
             type="button"
-            id="dropdownMenu2"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
+            href="../profile_p/perfil.html"
           >
-            Nome de usuário
+            <i class="far fa-user"></i>Meu perfil
           </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <button
-              class="dropdown-item"
-              type="button"
-              href="../profile_p/perfil.html"
-            >
-              <i class="far fa-user"></i>Meu perfil
-            </button>
-            <button
-              class="dropdown-item"
-              type="button"
-              href="../landing/index.html"
-            >
-              <i class="fas fa-sign-out-alt"></i>Sair
-            </button>
-          </div>
+          <button
+            class="dropdown-item"
+            type="button"
+            href="../landing/index.html"
+          >
+            <i class="fas fa-sign-out-alt"></i>Sair
+          </button>
         </div>
       </div>
-      
     </nav>
-
     <!--Conteúdo-->
-    <p class="name-page">Favoritos</p>
+    <a href="../descobrir/descobrir.html" class="back">< Voltar</a>
+
+    <section>
+        <img src="../../img/nózdaNutrição 3.png" alt="img-capa" class="ep-image">
+        <h3 class="ep-title">Nóz da Nutrição</h3>
+        <h5 class="ep-subtitle">Pablo Couto</h5>
+        <p class="ep-descricao">Um podcast sobre Nutrição e seu contexto na vida contemporânea!</p>
+        <button class="btn follow">
+            Seguir
+        </button>
+    </section>
+    
+
+    <p class="name-page">Todos os favoritos</p>
 
     <section class="grid-container">
       <div

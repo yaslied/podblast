@@ -7,6 +7,7 @@
 
 body {
   background-color: #202020 !important;
+  overflow-x: hidden;
 }
 
 .nav-simple {
@@ -87,7 +88,7 @@ body {
   margin: 0 16px;
 }
 
-.nav-simple .user-icon {
+.nav-simple .icon-perfil .user-icon {
   height: 70px;
   position: relative;
   margin-left: 70vw !important;
@@ -151,47 +152,6 @@ body {
   margin: 0 16px;
 }
 
-.icon-perfil{
-  position: absolute;
-  top: -3vh;
-  left: -45vw;
-}
-
-.btn.btn-dark.dropdown-toggle{
-  margin-left: 28vw;
-}
-
-.container {
-  width: 50%; 
-  position: relative; 
-}
-
-.form-search{
-  margin-left: 35%;
-}
-
-input {
-  height: 5vh;
-  width: 10vw;
-  background-color: rgba(255, 255, 255, 0.11);
-  border-radius: 8px;
-}
-
-input,
-.search {
-  padding: 10px;
-}
-
-.search {
-  position: absolute;
-  top: 0;
-  left: 5;
-}
-
-input {
-  padding-left: 60px;
-}
-
 button.dropdown-item {
   color: black;
 }
@@ -221,7 +181,37 @@ i {
   text-decoration: none;
 }
 
-p.name-page {
+.back{
+    color: blueviolet;
+    font-size: 25px;
+    padding-left: 20px;
+}
+
+.ep-image{
+    height: 120px;
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 120px;
+}
+
+.ep-title, .ep-subtitle{ 
+    margin-left: -280px !important;
+}
+
+.ep-descricao{
+    color: white;
+    margin-left: 175px;
+}
+
+.btn.follow{
+    background-color: transparent !important;
+    color: blueviolet;
+    border: 1d solid blueviolet !important;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+p.name-page{
   color: white !important;
   font-size: 25px;
   padding-left: 20px;
@@ -243,27 +233,24 @@ p.name-page {
 
 h3,
 h5,
-.text,
-span {
+.text, span {
   color: white !important;
   text-align: start;
 }
 
-h3,
-h5,
-.text {
+h3, h5, .text{
   padding-left: 30%;
 }
 
-.text {
+.text{
   font-size: 14px;
 }
 
-h3 {
+h3{
   margin-top: -130px !important;
 }
 
-span {
+span{
   font-size: 12px !important;
   margin-top: -20px;
   padding-left: 1%;
@@ -278,38 +265,38 @@ img.image {
   width: 120px;
 }
 
-.btn.dropdown-toggle.share {
+.btn.dropdown-toggle.share{
   background-color: transparent;
   border: none;
   margin-left: 440% !important;
   top: -50px;
 }
 
-.btn.dropdown-toggle :hover {
+.btn.dropdown-toggle :hover{
   background-color: transparent;
   border: none !important;
   text-decoration: none;
 }
 
-.play {
+.play{
   margin-top: 30px;
   padding-left: 25px;
   color: blueviolet !important;
 }
 
-.play :hover {
+.play :hover{
   text-decoration: none !important;
 }
 
-.like {
+.like{
   padding-left: 85%;
   margin-top: -20px;
 }
 
-.like :hover {
+.like :hover{
   color: red !important;
 }
 
-.download {
+.download{
   margin-top: -20px;
 }

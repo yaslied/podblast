@@ -42,8 +42,15 @@
     <nav class="nav-simple">
       <div class="identity">
         <img class="logo" src="../../img/logo.png" alt="logo" />
-        <span>Pod<strong>blast</strong></span>
+        <span class="podblast">Pod<strong>blast</strong></span>
       </div>
+
+      <form action="search" method="post" class="form-search">
+        <div class="container">
+          <input type="search" id="busca" name="q" />
+          <button type="submit" class="search"><i class="fas fa-search"></i></button>
+        </div>
+      </form>
 
       <a href="" class="favorites" style="color: blueviolet">Favoritos</a>
 
@@ -51,38 +58,41 @@
         >Biblioteca</a
       >
 
-      <div class="icon-perfil">
-        <img class="user-icon" src="../../img/icon.png" alt="ícone perfil" />
-      </div>
-
-      <div class="dropdown">
-        <button
-          class="btn btn-dark dropdown-toggle"
-          type="button"
-          id="dropdownMenu2"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          Nome de usuário
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+      <div class="menu container">
+        <div class="icon-perfil">
+          <img class="user-icon" src="../../img/icon.png" alt="ícone perfil" />
+        </div>
+  
+        <div class="dropdown">
           <button
-            class="dropdown-item"
+            class="btn btn-dark dropdown-toggle"
             type="button"
-            href="../profile_p/perfil.html"
+            id="dropdownMenu2"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
           >
-            <i class="far fa-user"></i>Meu perfil
+            Nome de usuário
           </button>
-          <button
-            class="dropdown-item"
-            type="button"
-            href="../landing/index.html"
-          >
-            <i class="fas fa-sign-out-alt"></i>Sair
-          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <button
+              class="dropdown-item"
+              type="button"
+              href="../profile_p/perfil.html"
+            >
+              <i class="far fa-user"></i>Meu perfil
+            </button>
+            <button
+              class="dropdown-item"
+              type="button"
+              href="../landing/index.html"
+            >
+              <i class="fas fa-sign-out-alt"></i>Sair
+            </button>
+          </div>
         </div>
       </div>
+      
     </nav>
 
     <!--Conteúdo-->
@@ -212,7 +222,7 @@
             Comédia<i class="fas fa-theater-masks"></i></a>
           <a href="#" class="grid-item mus">Música<i class="fas fa-music"></i></a>
           <a href="#" class="grid-item esp">Esportes<i class="fas fa-futbol"></i></a>
-          <a href="#" class="grid-item sau">Saúde<i class="fas fa-heartbeat"></i></a>
+          <a href="../../pages/episodios_saude/saude.html" class="grid-item sau">Saúde<i class="fas fa-heartbeat"></i></a>
           <a href="#" class="grid-item cin">Cinema<i class="fas fa-tv"></i></a>
           <a href="#" class="grid-item edu">Educação<i class="fas fa-user-graduate"></i></a>
         </div>
