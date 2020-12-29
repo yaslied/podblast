@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css");
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto.ttf") format("truetype");
+}
+
+.nav-simple {
+  height: 50px;
+  width: 100%;
+  padding: 4px 16px;
+  background-color: #040505;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-family: "Roboto";
+  font-family: "Roboto-regular";
+}
+
+.nav-simple .identity {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.nav-simple .identity .logo {
+  background-color: #040505;
+  max-width: 120px;
+  max-height: 30px;
+  border: none;
+  margin: 0 8px 0 0;
+}
+
+.nav-simple .identity span {
+  color: white;
+  font-size: 30px !important;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.nav-simple .identity span strong {
+  font-size: 30px !important;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-simple .nav-list {
+  list-style: none;
+  justify-self: right !important;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: auto;
+}
+
+.nav-simple .nav-list .nav-list-item {
+  text-transform: none;
+  font-size: 16px;
+  margin: 0 16px;
+}
+
+.nav-simple .icon-perfil .user-icon {
+  height: 70px;
+  position: relative;
+  margin-left: 70vw !important;
+  margin-right: 0px;
+  padding-right: 0%;
+  margin-top: 5px;
+}
+
+.nav-simple button {
+  margin-right: 20px;
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+  max-height: 40px;
+  padding: 8px 10px;
+  text-align: center;
+  color: white;
+  line-height: 24px;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  -webkit-transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav-simple button span {
+  color: white;
+  margin: 0 px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.nav-withList {
+  max-height: 70px;
+  width: 100%;
+  padding: 4px 16px;
+  background-color: #040505;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: "Roboto-regular";
+}
+
+.nav-withList .identity .logo {
+  max-width: 120px;
+  max-height: 70px;
+  border: 1px solid white;
+}
+
+.nav-withList .nav-list .nav-list-item {
+  text-transform: none;
+  font-size: 16px;
+  margin: 0 16px;
+} 
+
+button.dropdown-item{
+    color: black;
+}
+
+i{
+    color: blueviolet !important;
+    padding-right: 10px;
+}
+
+.favorites {
+  margin-left: 65vw;
+  position: absolute;
+  text-decoration: none;
+}
+
+.favorites:hover {
+  text-decoration: none;
+}
+
+.library {
+  margin-left: 73vw;
+  position: absolute;
+  text-decoration: none;
+}
+
+.library:hover {
+  text-decoration: none;
+}
+
+a.back{
+    color: blueviolet !important;
+    font-size: 25px;
+    padding-left: 30px;
+}
+
+a.back:hover{
+    text-decoration: none;
+}
+
+h3{
+    color: white !important;
+    font-size: 30px;
+    text-align: start;
+    padding-left: 30px;
+    padding-top: 40px;
+}
+
+p{
+    color: #C7C7C7;
+    font-size: 15px;
+    padding-left: 30px;
+}
+
+
+

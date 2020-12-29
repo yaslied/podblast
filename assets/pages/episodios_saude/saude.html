@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favoritos</title>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../pages/episodios_saude/style.css"
+    />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-1x.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-2x.png" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-1x.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-2x.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/path/to/flickity.css" media="screen" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="nav-simple">
+      <div class="identity">
+        <img class="logo" src="../../img/logo.png" alt="logo" />
+        <span class="podblast">Pod<strong>blast</strong></span>
+      </div>
+
+      <a href="" class="favorites" style="color: blueviolet">Favoritos</a>
+
+      <a href="" class="library" style="color: blueviolet; text-align: right"
+        >Biblioteca</a
+      >
+
+      <div class="icon-perfil">
+        <img class="user-icon" src="../../img/icon.png" alt="ícone perfil" />
+      </div>
+
+      <div class="dropdown">
+        <button
+          class="btn btn-dark dropdown-toggle"
+          type="button"
+          id="dropdownMenu2"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Nome de usuário
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <button
+            class="dropdown-item"
+            type="button"
+            href="../../pages/profile_p/perfil.html"
+          >
+            <i class="far fa-user"></i>Meu perfil
+          </button>
+          <button
+            class="dropdown-item"
+            type="button"
+            href="../landing/index.html"
+          >
+            <i class="fas fa-sign-out-alt"></i>Sair
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!--Conteúdo-->
+    <a href="../descobrir/descobrir.html" class="back">< Voltar</a>
+
+    <section>
+        <img src="../../img/nózdaNutrição 3.png" alt="img-capa" class="ep-image">
+        <h3 class="ep-title">Nóz da Nutrição</h3>
+        <h5 class="ep-subtitle">Pablo Couto</h5>
+        <p class="ep-descricao">Um podcast sobre Nutrição e seu contexto na vida contemporânea!</p>
+        <button class="btn follow">
+            Seguir
+        </button>
+    </section>
+    
+
+    <p class="name-page">Todos os favoritos</p>
+
+    <section class="grid-container">
+      <div
+        class="grid-item"
+        id="1"
+        href="../../pages/listening_now/listening.html"
+      >
+        <img src="../../img/saúdeNóz 1.png" alt="image" class="image" />
+        <div class="btn-group dropright">
+          <button
+            type="button"
+            class="btn dropdown-toggle share"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="fas fa-share-alt"></i>
+          </button>
+          <div class="dropdown-menu share">
+            <button
+              class="dropdown-item"
+              type="button"
+              href="https://twitter.com/"
+            >
+              <i class="fab fa-twitter"></i>Twitter
+            </button>
+            <button
+              class="dropdown-item"
+              type="button"
+              href="https://facebook.com/"
+            >
+              <i class="fab fa-facebook"></i>Facebook
+            </button>
+          </div>
+        </div>
+        <h3 class="title">#1 PF - Papo Feito</h3>
+        <h5 class="subtitle">Vidas Negras na Nutrição</h5>
+        <p class="text">
+          No episódio de hoje, as ilustríssimas Aline Jerônimo, Bruna de
+          Oliveira e Mariana Meirelles tomam conta do podcast.
+        </p>
+        <span class="nome"> Pablo Couto • 01/07/2020 • 20:38 </span>
+        <footer class="grid-item-footer row">
+          <a href="../../pages/listening_now/listening.html" class="play"
+            ><i class="fas fa-play-circle"></i>1h 41min</a
+          >
+          <a class="like">
+            <i class="fab fa-gratipay"></i>
+          </a>
+          <a class="download" href="#">
+            <i class="fas fa-arrow-circle-down"></i>
+          </a>
+        </footer>
+      </div>
+
+      <div
+        class="grid-item"
+        id="1"
+        href="../../pages/listening_now/listening.html"
+      >
+        <img src="../../img/saúdeNóz 1.png" alt="image" class="image" />
+        <div class="btn-group dropright">
+          <button
+            type="button"
+            class="btn dropdown-toggle share"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="fas fa-share-alt"></i>
+          </button>
+          <div class="dropdown-menu share">
+            <button
+              class="dropdown-item"
+              type="button"
+              href="https://twitter.com/"
+            >
+              <i class="fab fa-twitter"></i>Twitter
+            </button>
+            <button
+              class="dropdown-item"
+              type="button"
+              href="https://facebook.com/"
+            >
+              <i class="fab fa-facebook"></i>Facebook
+            </button>
+          </div>
+        </div>
+        <h3 class="title">#1 PF - Papo Feito</h3>
+        <h5 class="subtitle">Vidas Negras na Nutrição</h5>
+        <p class="text">
+          No episódio de hoje, as ilustríssimas Aline Jerônimo, Bruna de
+          Oliveira e Mariana Meirelles tomam conta do podcast.
+        </p>
+        <span class="nome"> Pablo Couto • 01/07/2020 • 20:38 </span>
+        <footer class="grid-item-footer row">
+          <a href="../../pages/listening_now/listening.html" class="play"
+            ><i class="fas fa-play-circle"></i>1h 41min</a
+          >
+          <a class="like">
+            <i class="fab fa-gratipay"></i>
+          </a>
+          <a class="download" href="#">
+            <i class="fas fa-arrow-circle-down"></i>
+          </a>
+        </footer>
+      </div>
+
+      <div
+        class="grid-item"
+        id="1"
+        href="../../pages/listening_now/listening.html"
+      >
+        <img src="../../img/saúdeNóz 1.png" alt="image" class="image" />
+        <div class="btn-group dropright">
+          <button
+            type="button"
+            class="btn dropdown-toggle share"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="fas fa-share-alt"></i>
+          </button>
+          <div class="dropdown-menu share">
+            <button
+              class="dropdown-item"
+              type="button"
+              href="https://twitter.com/"
+            >
+              <i class="fab fa-twitter"></i>Twitter
+            </button>
+            <button
+              class="dropdown-item"
+              type="button"
+              href="https://facebook.com/"
+            >
+              <i class="fab fa-facebook"></i>Facebook
+            </button>
+          </div>
+        </div>
+        <h3 class="title">#1 PF - Papo Feito</h3>
+        <h5 class="subtitle">Vidas Negras na Nutrição</h5>
+        <p class="text">
+          No episódio de hoje, as ilustríssimas Aline Jerônimo, Bruna de
+          Oliveira e Mariana Meirelles tomam conta do podcast.
+        </p>
+        <span class="nome"> Pablo Couto • 01/07/2020 • 20:38 </span>
+        <footer class="grid-item-footer row">
+          <a href="../../pages/listening_now/listening.html" class="play"
+            ><i class="fas fa-play-circle"></i>1h 41min</a
+          >
+          <a class="like">
+            <i class="fab fa-gratipay"></i>
+          </a>
+          <a class="download" href="#">
+            <i class="fas fa-arrow-circle-down"></i>
+          </a>
+        </footer>
+      </div>
+
+      <div
+        class="grid-item"
+        id="1"
+        href="../../pages/listening_now/listening.html"
+      >
+        <img src="../../img/saúdeNóz 1.png" alt="image" class="image" />
+        <div class="btn-group dropright">
+          <button
+            type="button"
+            class="btn dropdown-toggle share"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="fas fa-share-alt"></i>
+          </button>
+          <div class="dropdown-menu share">
+            <button
+              class="dropdown-item"
+              type="button"
+              href="https://twitter.com/"
+            >
+              <i class="fab fa-twitter"></i>Twitter
+            </button>
+            <button
+              class="dropdown-item"
+              type="button"
+              href="https://facebook.com/"
+            >
+              <i class="fab fa-facebook"></i>Facebook
+            </button>
+          </div>
+        </div>
+        <h3 class="title">#1 PF - Papo Feito</h3>
+        <h5 class="subtitle">Vidas Negras na Nutrição</h5>
+        <p class="text">
+          No episódio de hoje, as ilustríssimas Aline Jerônimo, Bruna de
+          Oliveira e Mariana Meirelles tomam conta do podcast.
+        </p>
+        <span class="nome"> Pablo Couto • 01/07/2020 • 20:38 </span>
+        <footer class="grid-item-footer row">
+          <a href="../../pages/listening_now/listening.html" class="play"
+            ><i class="fas fa-play-circle"></i>1h 41min</a
+          >
+          <a class="like">
+            <i class="fab fa-gratipay"></i>
+          </a>
+          <a class="download" href="#">
+            <i class="fas fa-arrow-circle-down"></i>
+          </a>
+        </footer>
+      </div>
+
+      <div
+        class="grid-item"
+        id="1"
+        href="../../pages/listening_now/listening.html"
+      >
+        <img src="../../img/saúdeNóz 1.png" alt="image" class="image" />
+        <div class="btn-group dropright">
+          <button
+            type="button"
+            class="btn dropdown-toggle share"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="fas fa-share-alt"></i>
+          </button>
+          <div class="dropdown-menu share">
+            <button
+              class="dropdown-item"
+              type="button"
+              href="https://twitter.com/"
+            >
+              <i class="fab fa-twitter"></i>Twitter
+            </button>
+            <button
+              class="dropdown-item"
+              type="button"
+              href="https://facebook.com/"
+            >
+              <i class="fab fa-facebook"></i>Facebook
+            </button>
+          </div>
+        </div>
+        <h3 class="title">#1 PF - Papo Feito</h3>
+        <h5 class="subtitle">Vidas Negras na Nutrição</h5>
+        <p class="text">
+          No episódio de hoje, as ilustríssimas Aline Jerônimo, Bruna de
+          Oliveira e Mariana Meirelles tomam conta do podcast.
+        </p>
+        <span class="nome"> Pablo Couto • 01/07/2020 • 20:38 </span>
+        <footer class="grid-item-footer row">
+          <a href="../../pages/listening_now/listening.html" class="play"
+            ><i class="fas fa-play-circle"></i>1h 41min</a
+          >
+          <a class="like">
+            <i class="fab fa-gratipay"></i>
+          </a>
+          <a class="download" href="#">
+            <i class="fas fa-arrow-circle-down"></i>
+          </a>
+        </footer>
+      </div>
+
+      <div
+        class="grid-item"
+        id="1"
+        href="../../pages/listening_now/listening.html"
+      >
+        <img src="../../img/saúdeNóz 1.png" alt="image" class="image" />
+        <div class="btn-group dropright">
+          <button
+            type="button"
+            class="btn dropdown-toggle share"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="fas fa-share-alt"></i>
+          </button>
+          <div class="dropdown-menu share">
+            <button
+              class="dropdown-item"
+              type="button"
+              href="https://twitter.com/"
+            >
+              <i class="fab fa-twitter"></i>Twitter
+            </button>
+            <button
+              class="dropdown-item"
+              type="button"
+              href="https://facebook.com/"
+            >
+              <i class="fab fa-facebook"></i>Facebook
+            </button>
+          </div>
+        </div>
+        <h3 class="title">#1 PF - Papo Feito</h3>
+        <h5 class="subtitle">Vidas Negras na Nutrição</h5>
+        <p class="text">
+          No episódio de hoje, as ilustríssimas Aline Jerônimo, Bruna de
+          Oliveira e Mariana Meirelles tomam conta do podcast.
+        </p>
+        <span class="nome"> Pablo Couto • 01/07/2020 • 20:38 </span>
+        <footer class="grid-item-footer row">
+          <a href="../../pages/listening_now/listening.html" class="play"
+            ><i class="fas fa-play-circle"></i>1h 41min</a
+          >
+          <a class="like">
+            <i class="fab fa-gratipay"></i>
+          </a>
+          <a class="download" href="#">
+            <i class="fas fa-arrow-circle-down"></i>
+          </a>
+        </footer>
+      </div>
+    </section>
+  </body>
+</html>
